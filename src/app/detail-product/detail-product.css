@@ -1,0 +1,111 @@
+.intro-section{
+    color: white;
+    padding: 20px;
+    text-align: center ;
+}
+.product-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;  
+}
+.thumbnail-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.thumbnail-item {
+    height: 120px;
+    width: 120px;
+    margin-right: 5px;
+    /*thêm khoảng cách ngang giữa cách ảnh nhỏ */
+}
+
+.thumbnail-item:last-child {
+    margin-right: 0;
+    /*xóa khoảng cách ngang giữa ảnh cuối */
+}
+
+.thumbnail-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.thumbnail-item.active {
+    border: 2px solid white;
+}
+.product-details {
+    color: white;
+    padding: 20px;
+}
+.product-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.product-actions button{
+    margin-right: 10px;
+}
+.product-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.product-quantity button {
+    width: 40px;
+    margin: 0 10px;
+    font-size: 16px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.border-wrapper{
+    background-color: transparent;
+    text-align: center;
+}
+
+.product-quantity input:focus {
+    outline: none;
+}
+
+/* Wrapper around quantity controls */
+.border-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.02);
+}
+
+.border-wrapper button {
+    background: transparent;
+    border: none;
+    color: white;
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.border-wrapper input {
+    width: 48px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.border-wrapper input:focus {
+    outline: none;
+}

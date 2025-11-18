@@ -1,0 +1,19 @@
+/* Header styles - selectors match the structure in header.html */
+.navbar {
+    background-color: transparent !important;
+}
+.navbar .container {
+    background-color: transparent !important;
+}
+.navbar .navbar-brand {
+    color: rgb(173, 178, 203);
+}
+.navbar .nav-link {
+    color: rgb(173, 178, 203);
+    border-radius: 18px;
+    padding: 8px 16px;
+}
+.navbar .nav-link.active {
+    background-color: rgb(127, 68, 255) !important;
+    color: white !important;
+}

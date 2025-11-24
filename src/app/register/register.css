@@ -1,0 +1,145 @@
+/* ----------------------------------------------------- */
+/* Global & Container Styles */
+/* ----------------------------------------------------- */
+.container{
+    color: white;
+    /* Đảm bảo container chiếm toàn bộ chiều cao khung nhìn */
+    height: 100vh; 
+}
+
+/* ----------------------------------------------------- */
+/* Form Card Styles (Áp dụng chung cho cả Login và Register) */
+/* ----------------------------------------------------- */
+.login-form, .register-form {
+    max-width: 500px;
+    border: 1px solid rgb(32,34,60);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(12,12,55);
+    /* Các thuộc tính căn chỉnh này có thể không cần thiết nếu dùng Bootstrap mx-auto, 
+       nhưng tôi giữ lại để phù hợp với code gốc của bạn. */
+    align-items: center; 
+    justify-content: center;
+}
+
+/* ----------------------------------------------------- */
+/* Header Styles (Áp dụng chung cho cả Login và Register) */
+/* ----------------------------------------------------- */
+.login-header, .register-header {
+    color: rgb(105, 244, 181);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ----------------------------------------------------- */
+/* Input Field Styles */
+/* ----------------------------------------------------- */
+.form-control{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+/* Khi input được focus (nhấn vào) */
+.form-control:focus{
+    border-color: transparent;
+    background-color: transparent;
+    color: white;
+    outline: none; /* Bỏ viền xanh mặc định của trình duyệt */
+    box-shadow: none; /* Bỏ shadow focus của Bootstrap */
+}
+
+/* Style cho Placeholder */
+.form-control::placeholder{
+    color: rgba(243,165,42,0.4);
+    opacity: 1;
+}
+.form-control:-ms-input-placeholder{ /* IE 10-11 */
+    color: rgba(243,165,42,0.4);
+}
+.form-control::-ms-input-placeholder{ /* Edge */
+    color: rgba(243,165,42,0.4);
+}
+
+/* ----------------------------------------------------- */
+/* Divider Styles */
+/* ----------------------------------------------------- */
+.divider-nospace{
+    /* Đường kẻ dưới input (không có khoảng cách) */
+    border-top: 1px solid white;
+}
+.divider{
+    /* Đường kẻ lớn dùng để phân chia các phần */
+    height: 1px;
+    background-color: rgb(243,165,42);
+    margin: 20px;
+}
+
+/* ----------------------------------------------------- */
+/* Password Field & Toggle Icon */
+/* ----------------------------------------------------- */
+.password-field{
+    /* Bắt buộc phải có để icon .toggle-password dùng position: absolute */
+    position: relative;
+}
+.toggle-password{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    /* Kỹ thuật căn giữa theo chiều dọc */
+    transform: translateY(-50%); 
+    cursor: pointer;
+    color: rgb(105, 244, 181);
+}
+
+/* ----------------------------------------------------- */
+/* Button Styles (Áp dụng chung cho cả Login và Register) */
+/* ----------------------------------------------------- */
+.login-button, .register-button {
+    background: linear-gradient(to right, rgb(225,64,180), rgb(126,43,237));
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    padding: 10px 0px;
+    margin-top: 20px;
+    border: none;
+}
+
+/* ----------------------------------------------------- */
+/* Checkbox & Link Styles */
+/* ----------------------------------------------------- */
+.checkbox-text{
+    color: rgb(243,165,42);
+    /* Căn giữa toàn bộ khối checkbox và link */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Đảm bảo căn giữa như code gốc */
+    margin-top: 10px;
+}
+/* màu checkbox khi được chọn */
+.checkbox-text input[type="checkbox"]:checked {
+    border-color: white;
+    background-color: rgb(233,66,178);
+}
+.form-check-input{
+    margin-right: 5px;
+}
+.register-link{
+    color: rgb(105,244,181);
+    text-decoration: none;
+}
+
+/* ----------------------------------------------------- */
+/* Select Box Styles (access-right) */
+/* ----------------------------------------------------- */
+.access-right{ 
+    margin-top: 20px;
+    width: 200px;
+    color: white;
+    border: 1px solid rgb(225, 64, 180);
+    background-color: rgb(12,12,55); /* Đảm bảo màu nền thống nhất */
+    padding: 5px;
+}
+.access-right:focus{
+    border: 1px solid rgb(225, 64, 180);
+}

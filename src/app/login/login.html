@@ -1,0 +1,44 @@
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="login-form mx-auto">
+                <h2 class="login-header">Đăng nhập</h2>
+                <div class="form-group">
+                    <label for="email">Email/Phone</label>
+                    <input type="email" class="form-control" id="email" placeholder="Nhập email">
+                    <div class="divider-nospace"></div>
+                </div>
+                <div class="mt-5">
+                    <div class="form-group password-field">
+                        <label for="password">Mật khẩu</label>
+                        <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu">
+                        <i class="toggle-password bi bi-eye-slash-fill"></i>
+                        <div class="divider-nospace"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check checkbox-text">
+                            <span style="display: flex;">
+                                <input type="checkbox" class="form-check-input" id="rememberMe">
+                                <label class="form-check-label text-start" for="rememberMe">Ghi nhớ đăng nhập</label>
+                            </span>
+                            <a href="#" class="register-link">Quên mật khẩu?</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <select class="form-control access-right">
+                        <option disabled selected>Chọn quyền truy cập</option>
+                        <option>Khách hàng</option>
+                        <option>Quản trị viên</option>
+                    </select>
+                    <button class="login-button" type="button">Đăng nhập</button>
+                    <div class="divider"></div>
+                    <p class="text-center">Chưa có tài khoản? <span>
+                            <a href="#" class="register-link">Đăng ký ngay</a></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-footer></app-footer>

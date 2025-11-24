@@ -2,14 +2,13 @@ import { Component } from '@angular/core';
 import { Header } from "../header/header";
 import { Footer } from "../footer/footer";
 
-
 @Component({
-  selector: 'app-order',
+  selector: 'app-order-confirm',
   standalone: true,
   imports: [Header, Footer],
-  templateUrl: './order.html',
-  styleUrls: ['./order.css'],
+  templateUrl: './order-confirm.html',
+  styleUrls: ['./order-confirm.css'],
 })
-export class Order {
+export class OrderConfirm {
 
 }
